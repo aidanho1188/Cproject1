@@ -31,7 +31,7 @@ int getcharfunction(){
     printf("You entered: ");
     putchar(c);
 }
-**/
+
 
 int printfunction(int n, int val){
     for (int i = 1000; i > n; i--){
@@ -39,6 +39,7 @@ int printfunction(int n, int val){
     }
     return 0;
 }
+
 int main(void)
 {
     int n, val;
@@ -48,4 +49,39 @@ int main(void)
     scanf("%d", &val);
     printfunction(n,val);
     return 0;
+}
+
+
+
+
+int main(void){
+
+    char name[];
+    printf("Enter your name: \n");
+    scanf("%s", &name);
+    printf("You are %s", name);
+    return 0;
+}
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main(){
+    int i,number;
+    printf("Enter a number: ");
+    scanf("%d",&number);
+    i=1;
+    while (i*i < number)
+        i=i+1;
+    printf("%d is the largest square within %d\n",i*i,number);
 }
